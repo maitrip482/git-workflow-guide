@@ -102,7 +102,34 @@
                 <code>git clone https://github.com/user/repo.git</code>
             </div>
         </section>
-        <section id="undo" class="content"></section>
+        <section id="undo" class="content">
+            <h2>Undoing Changes</h2>
+            <div class="card">
+                <h3>git restore</h3>
+                <p>Discard uncommitted changes in a file. Reverts to last committed state.</p>
+                <code>git restore &lt;file&gt;</code>
+            </div>
+            <div class="card">
+                <h3>git restore --staged</h3>
+                <p>Unstage a file without losing your changes. Moves it back to working directory.</p>
+                <code>git restore --staged &lt;file&gt;</code>
+            </div>
+            <div class="card">
+                <h3>git revert</h3>
+                <p>Create a new commit that undoes a previous commit. Safe for shared branches.</p>
+                <code>git revert HEAD</code>
+            </div>
+            <div class="card">
+                <h3>git reset</h3>
+                <p>Move branch pointer backward. <span class="highlight">--soft</span> keeps changes staged, <span class="highlight">--hard</span> discards everything.</p>
+                <code>git reset --soft HEAD~1</code>
+            </div>
+            <div class="card">
+                <h3>git stash</h3>
+                <p>Temporarily shelve uncommitted work. Use <span class="highlight">pop</span> to restore later.</p>
+                <code>git stash &amp;&amp; git stash pop</code>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
