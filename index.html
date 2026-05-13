@@ -46,7 +46,34 @@
                 <code>git log --oneline</code>
             </div>
         </section>
-        <section id="branching" class="content"></section>
+        <section id="branching" class="content">
+            <h2>Branching & Merging</h2>
+            <div class="card">
+                <h3>git branch</h3>
+                <p>List all local branches. The current branch is marked with <span class="highlight">*</span>.</p>
+                <code>git branch</code>
+            </div>
+            <div class="card">
+                <h3>git switch -c</h3>
+                <p>Create a new branch and switch to it immediately.</p>
+                <code>git switch -c feature/my-feature</code>
+            </div>
+            <div class="card">
+                <h3>git switch</h3>
+                <p>Switch to an existing branch. Your files update to match that branch's state.</p>
+                <code>git switch main</code>
+            </div>
+            <div class="card">
+                <h3>git merge</h3>
+                <p>Merge another branch into your current branch. Use <span class="highlight">--no-ff</span> to preserve branch history.</p>
+                <code>git merge feature/my-feature</code>
+            </div>
+            <div class="card">
+                <h3>git branch -d</h3>
+                <p>Delete a branch after it has been merged. Use <span class="highlight">-D</span> to force-delete unmerged branches.</p>
+                <code>git branch -d feature/my-feature</code>
+            </div>
+        </section>
         <section id="remotes" class="content"></section>
         <section id="undo" class="content"></section>
     </main>
