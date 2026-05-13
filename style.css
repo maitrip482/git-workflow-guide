@@ -67,3 +67,43 @@ main {
 .content.active {
     display: block;
 }
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.card code {
+    display: block;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #f0883e;
+}
+
+.highlight {
+    color: #f0883e;
+    font-family: 'Courier New', monospace;
+}
+
+h2 {
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #21262d;
+}
