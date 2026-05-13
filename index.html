@@ -74,7 +74,34 @@
                 <code>git branch -d feature/my-feature</code>
             </div>
         </section>
-        <section id="remotes" class="content"></section>
+        <section id="remotes" class="content">
+            <h2>Remote Operations</h2>
+            <div class="card">
+                <h3>git remote add</h3>
+                <p>Link your local repository to a remote (e.g., GitHub). <span class="highlight">origin</span> is the conventional name.</p>
+                <code>git remote add origin https://github.com/user/repo.git</code>
+            </div>
+            <div class="card">
+                <h3>git push</h3>
+                <p>Upload local commits to the remote. Use <span class="highlight">-u</span> on first push to set tracking.</p>
+                <code>git push -u origin main</code>
+            </div>
+            <div class="card">
+                <h3>git pull</h3>
+                <p>Download and merge remote changes into your current branch (fetch + merge).</p>
+                <code>git pull origin main</code>
+            </div>
+            <div class="card">
+                <h3>git fetch</h3>
+                <p>Download remote changes without merging. Safe way to check what's new.</p>
+                <code>git fetch origin</code>
+            </div>
+            <div class="card">
+                <h3>git clone</h3>
+                <p>Copy an entire remote repository to your local machine with full history.</p>
+                <code>git clone https://github.com/user/repo.git</code>
+            </div>
+        </section>
         <section id="undo" class="content"></section>
     </main>
     <script src="script.js"></script>
