@@ -18,7 +18,34 @@
         </nav>
     </header>
     <main>
-        <section id="basics" class="content active"></section>
+        <section id="basics" class="content active">
+            <h2>Git Basics</h2>
+            <div class="card">
+                <h3>git init</h3>
+                <p>Initialize a new Git repository in the current directory.</p>
+                <code>git init</code>
+            </div>
+            <div class="card">
+                <h3>git status</h3>
+                <p>Show the state of your working directory — untracked, modified, or staged files.</p>
+                <code>git status</code>
+            </div>
+            <div class="card">
+                <h3>git add</h3>
+                <p>Stage files for the next commit. Use <span class="highlight">.</span> to stage all changes.</p>
+                <code>git add &lt;file&gt;</code>
+            </div>
+            <div class="card">
+                <h3>git commit</h3>
+                <p>Save staged changes as a snapshot with a descriptive message.</p>
+                <code>git commit -m "Your message here"</code>
+            </div>
+            <div class="card">
+                <h3>git log</h3>
+                <p>View commit history. Use <span class="highlight">--oneline</span> for a compact view.</p>
+                <code>git log --oneline</code>
+            </div>
+        </section>
         <section id="branching" class="content"></section>
         <section id="remotes" class="content"></section>
         <section id="undo" class="content"></section>
